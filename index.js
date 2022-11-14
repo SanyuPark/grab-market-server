@@ -81,9 +81,6 @@ app.post("/products", (req, res) => {
       console.error(error);
       res.status(400).send("상품 업로드에 문제가 발생했습니다.");
     });
-  res.send({
-    body,
-  });
 });
 
 app.get("/products/:id", (req, res) => {
